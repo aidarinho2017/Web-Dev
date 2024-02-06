@@ -1,0 +1,143 @@
+#leftSide{
+    position: absolute;
+    left: 200px;
+    text-align: left;
+}
+h2 {
+    font-weight: 200;
+
+}
+.mainPage {
+    text-align: left;
+    display: block;
+    float: left;
+    width: 33%;
+    padding: 50px 100px 100px 100px;
+}
+.page {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    justify-content: space-around;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+#LogInButton{
+    width: 90%;
+    height: 50px;
+    font-size:20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    background-color: blue;
+    color: white;
+}
+.text4 {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
+    font-size: 15px;
+    color: blue;
+    text-decoration: none;
+    font-weight: 570;
+}
+.facebook {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+.auto {
+    text-align: center;
+    background-color: white;
+    padding: 1em;
+    width: 378px;
+    height: 456px;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+}
+.f {
+    float: right;
+    margin-top: 100px;
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 396px;
+}
+#q{
+    padding-left: 50px;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 1px solid #eeebeb;
+    border-radius: 5px;
+    outline: none;
+
+}
+#button1 {
+    margin: 15px;
+    width: 60%;
+    height: 50px;
+    font-size:20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+#text3 {
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+}
+.underTable {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: white;
+    padding-left: 6cm;
+    padding-right: 6cm;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.template {
+    align-content: center;
+    justify-content:flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.line {
+    border-top: 1px solid #222 ;
+    opacity: 0.2 ;
+    padding: 13px;
+}
+
+.template1 span {
+    color: gray;
+
+    padding-right: 20px;
+    padding-top: 8px;
+
+    font-size: 12px;
+}
+.template1 {
+    align-content: center;
+    justify-content:flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

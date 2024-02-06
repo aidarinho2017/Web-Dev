@@ -1,0 +1,136 @@
+.logIn {
+    width:260px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#wrapper {
+    width: 500px;
+    height: 50%;
+    overflow: hidden;
+    border: 0 solid #000;
+    margin: 50px auto;
+    padding: 10px;
+}
+.f{
+    color: darkblue;
+    padding: 10px;
+}
+
+.instaPhoto {
+    position: relative;
+    top: 25px;
+    left: 155px;
+    height: 550px;
+}
+
+.forgot {
+    color: red;
+    text-decoration: underline;
+    padding: 10px;
+}
+.mainPage {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.right {
+    width: 370px;
+    height: 700px;
+    margin: 20px;
+}
+
+.or {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 30px 10px 30px;
+    align-content: center;
+}
+
+.authorization {
+    float: right;
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    top: 100px;
+    right: 350px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.left {
+    width: 430px;
+    height: 700px;
+    background-repeat: no-repeat;
+    padding: 60px 0 0 400px;
+}
+#logInButton {
+    width: 260px;
+    height: 40px;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.signUp{
+    color: lightblue;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstRow {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.firstRow span {
+    color: gray;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.secondRow {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.secondRow span {
+    color: gray;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.secondRow select {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    -webkit-appearance: none;
+    background: none;
+    font-size: 12px;
+    border-color: transparent;
+}
