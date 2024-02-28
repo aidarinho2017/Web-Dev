@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Today",
+    "price": 99.99
+  },
+  {
+    "type": "2-Day",
+    "price": 9.99
+  },
+  {
+    "type": "Long",
+    "price": 1.99
+  },
+  {
+    "type": "With Fun",
+    "price": 1999.99
+  }
+]
