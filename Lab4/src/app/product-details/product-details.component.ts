@@ -30,6 +30,10 @@ export class ProductDetailsComponent implements OnInit {
     // Find the product that correspond with the id provided in route.
     this.product = products.find(product => product.id === productIdFromRoute);
   }
+  share(url: string) {
+    var link = url;
+    window.open(link);
+  }
   
 }
 

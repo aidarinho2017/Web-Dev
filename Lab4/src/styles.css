@@ -7,6 +7,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.filter{
+  position: absolute;
+  top: 15%;
+  left: 90%;
+  height: 30px;
+  width: 50px;
+  color: saddlebrown;
+  padding: 15px 10px 15px 10px;
+}
+
 body {
   margin: 0;
 }
@@ -82,6 +92,7 @@ label {
 .button:hover, button:hover {
   opacity: 0.8;
   font-weight: normal;
+  animation: rainbow 5s linear infinite;
 }
 
 .button:disabled, button:disabled {
@@ -98,6 +109,8 @@ label {
   height: 50px;
   font-size: 20px;
   border-radius: 5px;
+  margin: 0 auto;
+  display: inline;
 }
 
 .fancy-button i.material-icons {
@@ -150,6 +163,36 @@ app-product-list {
   color: white;
 }
 
+.login {
+  margin: 5px auto;
+  display: inline-flex;
+  height: 35px;
+  width: 90px;
+  font-size: 25px;
+  color: antiquewhite;
+  border: 2px solid red;
+  border-radius: 6px;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 100%;
+  transition: background-position 0.5s;
+}
+
+.login:hover {
+  animation: rainbow 5s linear infinite;
+}
+.login:active {
+  animation: none;
+  background-position: 100% 0;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400% 0;
+  }
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

@@ -12,6 +12,10 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { EmptyComponentComponent } from './empty-component/empty-component.component';
+import { StarRatingPipe } from './star-rating.pipe';
+import { LikesPipe } from './likes.pipe';
+import { LogInPageComponent } from './log-in-page/log-in-page.component';
+import { DislikesPipe } from './dislikes.pipe';
 
 @NgModule({
   imports: [
@@ -23,7 +27,9 @@ import { EmptyComponentComponent } from './empty-component/empty-component.compo
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
-      { path: 'Empty', component: EmptyComponentComponent }
+      { path: 'Empty', component: EmptyComponentComponent },
+      { path: 'productList', component: ProductListComponent},
+      { path: "logIn", component: LogInPageComponent}
     ]),
   ],
   declarations: [
@@ -34,7 +40,11 @@ import { EmptyComponentComponent } from './empty-component/empty-component.compo
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    EmptyComponentComponent
+    EmptyComponentComponent,
+    StarRatingPipe,
+    LikesPipe,
+    LogInPageComponent,
+    DislikesPipe
   ],
   bootstrap: [
     AppComponent

@@ -1,5 +1,14 @@
-
-<div *ngFor="let product of products" class = "products">
+<div class="filter">
+    <p> Choose Category</p>
+    <select (change)="setFilteredItem($event)">
+        <option value="SmartPhones"> SmartPhones </option>
+        <option value="Computers"> Computers </option>
+        <option value="Audio"> Audio </option>
+        <option value="Other"> Other </option>
+        <option value="None"> None </option>
+    </select>
+</div>
+<div *ngFor="let product of filteredItems" class = "products">
       <h3>
         <a [title]="product.name + ' details'"
         [routerLink]="['/products', product.id]">
@@ -34,22 +43,27 @@
       <p *ngIf="product.description">
         {{ product.description }}
       </p>
-      <p *ngIf="product.rating">
-        Rating: {{ product.rating }} ★
-      </p>
-      <p *ngIf="product.price">
-        Cost: {{ product.price | currency  }} 
-      </p>
 
-      <button type="button" (click)="share(product.url)">
-        Share
-      </button>
-      
-      <app-product-alerts
-        [product]="product" 
-        (notify)="onNotify()">
-      </app-product-alerts>
+    <p *ngIf="product.rating">
+        Rating: {{ product.likes | starRating: product.dislikes }}
+    </p>
+      <p *ngIf="product.price">
+        Cost: {{ product.price | currency }}
+      </p>
+    <button type="button" (click)="share(product.url)">Share</button>
+    <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+
+    <div class="like-dislike-container">
+        <div class="likes-dislikes">
+            <button type="button" (click)="incrementLikes(product.id)" class="btn1">💚</button>
+            <p>{{ product.likes | likes }}</p>
+            <button type="button" (click)="incrementDislikes(product.id)" class="btn1">🤡</button>
+            <p>{{ product.dislikes | dislikes }}</p>
+            <button type="button" (click)="delete(product.id)" class="btn1">❌</button>
+        </div>
+    </div>
 </div>
+<div class="footer"> <a routerLink="/Empty" class="foot">Все права защищены. Любые совпадения с реальностью случайны. </a></div>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

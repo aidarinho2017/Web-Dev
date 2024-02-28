@@ -1,6 +1,5 @@
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
-
   <div class="carousel">
   
     <input type="checkbox" class="faux-ui-facia"> 
@@ -26,5 +25,6 @@
 
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
-  <button type="button" (click)="addToCart(product)">Buy</button>
+    <button type="button" (click)="share(product.url)" class="btn first">Visit kaspi.kz</button>
+  <button type="button" (click)="addToCart(product)" class="btn second">Buy</button>
 </div>
