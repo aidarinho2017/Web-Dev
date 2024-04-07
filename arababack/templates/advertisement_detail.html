@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advertisement Detail</title>
+</head>
+<body>
+    <h1>{{ advertisement.title }}</h1>
+    <p>{{ advertisement.description }}</p>
+    <p><a href="{% url 'update_advertisement' advertisement.pk %}">Edit</a></p>
+    <p><a href="{% url 'delete_advertisement' advertisement.pk %}">Delete</a></p>
+</body>
+</html>

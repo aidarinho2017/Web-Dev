@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panel Details</title>
+</head>
+<body>
+    <h1>All Solar Panels</h1>
+    {% for solarpanel in solarpanels %}
+        <div>
+            <h2>{{ solarpanel.make }} {{ solarpanel.model }}</h2>
+            <p><strong>Year:</strong> {{ solarpanel.year }}</p>
+            <p><strong>Price:</strong> ${{ solarpanel.price }}</p>
+            <p><strong>Description:</strong> {{ solarpanel.description }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>
