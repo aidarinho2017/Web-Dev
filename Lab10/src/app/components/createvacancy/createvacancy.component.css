@@ -1,0 +1,45 @@
+/* Form container */
+.form-container {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Form labels */
+label {
+  color: #333; /* Dark gray text */
+  font-weight: bold;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"],
+textarea {
+  width: calc(100% - 20px); /* Shorter width */
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: #007bff; /* Dark blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Disable the button when the form is invalid */
+button[type="submit"]:disabled {
+  background-color: #ccc; /* Light gray background */
+  cursor: not-allowed;
+}
+
+/* Hover effect on the submit button */
+button[type="submit"]:not(:disabled):hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

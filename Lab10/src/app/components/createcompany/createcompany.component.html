@@ -1,0 +1,26 @@
+<div class="container">
+<form (ngSubmit)="createCompany()" class="form-container">
+    <label>
+        Name:
+        <input [(ngModel)]="company.name" class="input-field" type="text" placeholder="Company Name"/>
+    </label>
+
+    <label>
+        City:
+        <input [(ngModel)]="company.city" class="input-field" type="text" placeholder="Abu Dhabi"/>
+    </label>
+
+    <label>
+        Description:
+        <input [(ngModel)]="company.description" class="input-field" type="text" placeholder="Your Info"/>
+    </label>
+
+    <label>
+        Address:
+        <input [(ngModel)]="company.address" class="input-field" type="text" placeholder="Tole bi 59"/>
+    </label>
+
+    <input type="submit" class="submit-btn" value="SUBMIT"/>
+</form>
+
+</div>
